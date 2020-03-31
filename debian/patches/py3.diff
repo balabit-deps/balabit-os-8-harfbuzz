@@ -1,0 +1,153 @@
+Description: changed shebang of python scripts to python3
+Authot: المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@users.sourceforge.net>
+Bug: https://github.com/harfbuzz/harfbuzz/issues/1501
+Index: harfbuzz/src/gen-arabic-table.py
+===================================================================
+--- harfbuzz.orig/src/gen-arabic-table.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-arabic-table.py	2019-09-11 05:20:53.481392548 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/src/gen-def.py
+===================================================================
+--- harfbuzz.orig/src/gen-def.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-def.py	2019-09-11 05:20:53.481392548 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/src/gen-emoji-table.py
+===================================================================
+--- harfbuzz.orig/src/gen-emoji-table.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-emoji-table.py	2019-09-11 05:20:53.481392548 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ 
+ from __future__ import print_function, division, absolute_import
+ import sys
+Index: harfbuzz/src/gen-indic-table.py
+===================================================================
+--- harfbuzz.orig/src/gen-indic-table.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-indic-table.py	2019-09-11 05:20:53.481392548 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/src/gen-os2-unicode-ranges.py
+===================================================================
+--- harfbuzz.orig/src/gen-os2-unicode-ranges.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-os2-unicode-ranges.py	2019-09-11 05:20:53.481392548 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ 
+ # -*- coding: utf-8 -*-
+ 
+Index: harfbuzz/src/gen-tag-table.py
+===================================================================
+--- harfbuzz.orig/src/gen-tag-table.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-tag-table.py	2019-09-11 05:20:53.485392555 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ 
+ """Generator of the mapping from OpenType tags to BCP 47 tags and vice
+ versa.
+Index: harfbuzz/src/gen-ucd-table.py
+===================================================================
+--- harfbuzz.orig/src/gen-ucd-table.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-ucd-table.py	2019-09-11 05:20:53.485392555 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/src/gen-use-table.py
+===================================================================
+--- harfbuzz.orig/src/gen-use-table.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-use-table.py	2019-09-11 05:20:53.485392555 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ # flake8: noqa
+ 
+ from __future__ import print_function, division, absolute_import
+Index: harfbuzz/src/gen-vowel-constraints.py
+===================================================================
+--- harfbuzz.orig/src/gen-vowel-constraints.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/src/gen-vowel-constraints.py	2019-09-11 05:20:53.485392555 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ 
+ """Generator of the function to prohibit certain vowel sequences.
+ 
+Index: harfbuzz/test/fuzzing/run-shape-fuzzer-tests.py
+===================================================================
+--- harfbuzz.orig/test/fuzzing/run-shape-fuzzer-tests.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/test/fuzzing/run-shape-fuzzer-tests.py	2019-09-11 05:20:53.485392555 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/test/fuzzing/run-subset-fuzzer-tests.py
+===================================================================
+--- harfbuzz.orig/test/fuzzing/run-subset-fuzzer-tests.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/test/fuzzing/run-subset-fuzzer-tests.py	2019-09-11 05:20:53.485392555 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/test/shaping/hb_test_tools.py
+===================================================================
+--- harfbuzz.orig/test/shaping/hb_test_tools.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/test/shaping/hb_test_tools.py	2019-09-11 05:20:53.489392562 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/test/shaping/run-tests.py
+===================================================================
+--- harfbuzz.orig/test/shaping/run-tests.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/test/shaping/run-tests.py	2019-09-11 05:20:53.489392562 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function, division, absolute_import
+ 
+Index: harfbuzz/test/subset/run-tests.py
+===================================================================
+--- harfbuzz.orig/test/subset/run-tests.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/test/subset/run-tests.py	2019-09-11 05:20:53.489392562 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ # Runs a subsetting test suite. Compares the results of subsetting via harfbuzz
+ # to subsetting via fonttools.
+Index: harfbuzz/test/subset/subset_test_suite.py
+===================================================================
+--- harfbuzz.orig/test/subset/subset_test_suite.py	2019-09-11 04:23:59.000000000 +0200
++++ harfbuzz/test/subset/subset_test_suite.py	2019-09-11 05:20:53.489392562 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ import io
+ import os
