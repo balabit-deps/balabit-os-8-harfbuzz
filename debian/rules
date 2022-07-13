@@ -4,8 +4,8 @@
 export LC_ALL=C.UTF-8
 
 # Increase slow fuzzer test timeouts for riscv64.
-export HB_TEST_SHAPE_FUZZER_TIMEOUT=10
-export HB_TEST_SUBSET_FUZZER_TIMEOUT=20
+export HB_TEST_SHAPE_FUZZER_TIMEOUT=30
+export HB_TEST_SUBSET_FUZZER_TIMEOUT=40
 
 %:
 	dh $@ --with gir

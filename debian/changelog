@@ -1,3 +1,15 @@
+harfbuzz (2.6.4-1ubuntu4.2) focal-security; urgency=medium
+
+  * SECURITY UPDATE: DoS via integer overflow
+    - debian/patches/CVE-2022-33068-1.patch: limit glyph extents in
+      src/hb-ot-color-sbix-table.hh.
+    - debian/patches/CVE-2022-33068-2.patch: fix conditional in
+      src/hb-ot-color-sbix-table.hh.
+    - CVE-2022-33068
+  * debian/rules: increase fuzzer timeouts to fix FTBFS on riscv64.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 13 Jul 2022 12:43:13 -0400
+
 harfbuzz (2.6.4-1ubuntu4) focal; urgency=medium
 
   * Increase slow new fuzzer test timeouts for riscv64.
